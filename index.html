@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thappeta Sravanth Kumar Reddy | Java Developer</title>
+<meta name="description" content="Portfolio of Thappeta Sravanth Kumar Reddy, Computer Science undergraduate skilled in Java, OOP, Data Structures and full-stack web development.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">Sravanth</a>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" class="icon-btn" aria-label="Switch colour theme">◐</button>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <p class="hello">Hi, I'm</p>
+    <h1>Thappeta Sravanth Kumar Reddy</h1>
+    <p class="lead">Computer Science undergraduate who builds full-stack web apps with Java, SQL and JavaScript. Looking for a software engineering internship or entry-level role.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="assets/Sravanth_Kumar_Reddy_Resume.pdf" download>Download resume</a>
+    </div>
+  </div>
+  <div class="code-card" aria-label="Interactive Java snippet">
+    <div class="code-bar"><span></span><span></span><span></span><b>Developer.java</b></div>
+<pre><code><span class="k">public class</span> <span class="t">Developer</span> {
+  <span class="k">String</span> name  = <span class="s">"Sravanth Kumar Reddy"</span>;
+  <span class="k">String</span> base  = <span class="s">"Anantapur, Andhra Pradesh"</span>;
+  <span class="k">double</span> cgpa  = <span class="n">8.54</span>;
+  <span class="k">int</span>    solved = <span class="n">150</span>; <span class="c">// coding problems</span>
+
+  <span class="k">public static void</span> main(String[] args) {
+    <span class="k">new</span> Developer().run();
+  }
+}</code></pre>
+    <button id="run" class="btn primary small">▶ Run main()</button>
+    <pre id="out" class="out" aria-live="polite">Press run to see the output.</pre>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <div class="about-grid">
+    <p>I have a strong base in Java, object-oriented programming and data structures. I learn by building: my projects pair a clean front end with a Java backend and a SQL database. I join hackathons to practise working in a team under time pressure, and I care about writing original code and protecting user data.</p>
+    <ul class="stats">
+      <li><strong data-count="8.54" data-dec="2">0</strong><span>B.Tech CGPA</span></li>
+      <li><strong data-count="150" data-suffix="+">0</strong><span>Problems solved</span></li>
+      <li><strong data-count="2">0</strong><span>Full-stack projects</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="filters" role="group" aria-label="Filter projects by technology">
+    <button class="chip active" data-f="all">All</button>
+    <button class="chip" data-f="java">Java</button>
+    <button class="chip" data-f="js">JavaScript</button>
+    <button class="chip" data-f="sql">SQL</button>
+  </div>
+  <div class="projects">
+    <article class="project" data-tags="java js sql">
+      <h3>Ready2Interview</h3>
+      <p class="sub">Web-based programming learning platform</p>
+      <p>A full-stack platform that teaches C, C++, Java, HTML, CSS, JavaScript, R and React.js to students preparing for technical interviews.</p>
+      <ul class="more" hidden>
+        <li>Designed and built the responsive front end with HTML, CSS and JavaScript.</li>
+        <li>Wrote the Java backend with SQL database integration for persistent data.</li>
+      </ul>
+      <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span><span>SQL</span></p>
+      <button class="link toggle" aria-expanded="false">Show details</button>
+    </article>
+    <article class="project" data-tags="java sql">
+      <h3>StudentVault</h3>
+      <p class="sub">Secure student management portal</p>
+      <p>A student management portal with secure login and role-based access for admins and students.</p>
+      <ul class="more" hidden>
+        <li>Implemented session management and CRUD operations for student records.</li>
+        <li>Built separate dashboards so admins and students manage profiles and academic information on their own.</li>
+      </ul>
+      <p class="tags"><span>Java</span><span>JSP</span><span>Servlets</span><span>JDBC</span><span>MySQL</span><span>Tomcat</span></p>
+      <button class="link toggle" aria-expanded="false">Show details</button>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="tabs" role="tablist">
+    <button role="tab" class="tab active" data-t="lang">Languages</button>
+    <button role="tab" class="tab" data-t="web">Web</button>
+    <button role="tab" class="tab" data-t="core">Core</button>
+    <button role="tab" class="tab" data-t="tools">Tools</button>
+  </div>
+  <div class="panel" id="skill-panel" role="tabpanel"></div>
+</section>
+
+<section id="education">
+  <h2>Education and certifications</h2>
+  <div class="edu-grid">
+    <ol class="timeline">
+      <li><time>2023 – present</time><h3>B.Tech, Computer Science and Engineering</h3><p>Srinivasa Ramanujan Institute of Technology, Anantapur. CGPA 8.54</p></li>
+      <li><time>2021 – 2023</time><h3>Intermediate (MPC)</h3><p>Narayana Junior College, Nellore. CGPA 9.74</p></li>
+      <li><time>2021</time><h3>Secondary School Certificate</h3><p>Gowtham EM School, Kadapa. CGPA 10.0</p></li>
+    </ol>
+    <div class="certs">
+      <h3>Certifications</h3>
+      <p><strong>C Programming</strong> by NPTEL. Functions, arrays, strings and pointers.</p>
+      <p><strong>Fundamentals of Java</strong> by Infosys Springboard. OOP, exception handling, multithreading basics and collections.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's talk</h2>
+  <div class="contact-grid">
+    <div>
+      <p>I'm open to internships and entry-level software roles. Send a message and I'll reply by email.</p>
+      <p class="links">
+        <a href="mailto:thappetasravanth@gmail.com">thappetasravanth@gmail.com</a>
+        <a href="tel:+916302648883">+91 63026 48883</a>
+        <a href="https://linkedin.com/in/sravanth-kumar-reddy-t-b083a736b" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/sravanth-dot" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+    <div class="form" id="form">
+      <label>Your name<input id="f-name" autocomplete="name"></label>
+      <label>Your email<input id="f-mail" type="email" autocomplete="email"></label>
+      <label>Message<textarea id="f-msg" rows="4"></textarea></label>
+      <button id="send" class="btn primary">Open in my email app</button>
+      <p id="f-err" class="err" role="alert"></p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© <span id="yr"></span> Thappeta Sravanth Kumar Reddy</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
